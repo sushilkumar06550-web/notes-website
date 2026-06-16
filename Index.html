@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shivam Teach Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: linear-gradient(135deg, #87CEEB, #0b1f3a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .box {
+      background: white;
+      color: #0b1f3a;
+      padding: 25px;
+      border-radius: 15px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #0b1f3a;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #123a66;
+    }
+
+    .small {
+      font-size: 12px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h2>👋 Shivam Teach Login</h2>
+
+    <input type="text" id="user" placeholder="Enter Username">
+    <input type="password" id="pass" placeholder="Enter Password">
+
+    <button onclick="login()">Login</button>
+
+    <p class="small">Demo: user = shivam | pass = 1234</p>
+  </div>
+
+  <script>
+    function login() {
+      var u = document.getElementById("user").value;
+      var p = document.getElementById("pass").value;
+
+      if(u=="shivam" && p=="1234"){
+        window.location.href="home.html";
+      } else {
+        alert("Wrong Username or Password");
+      }
+    }
+  </script>
+
+</body>
+</html>
