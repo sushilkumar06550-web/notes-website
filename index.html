@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Notes Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivam Notes Website</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f7fc;
+}
+
+header{
+    background:linear-gradient(135deg,#0077ff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    margin:0;
+    font-size:40px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.container{
+    padding:30px;
+}
+
+.subjects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#0077ff;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#0077ff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+footer{
+    margin-top:40px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
 </head>
+
 <body>
-<h1>Welcome to My Notes Website</h1>
-<p>Yahan se notes purchase kiye ja sakte hain.</p>
+
+<header>
+    <h1>📚 Shivam Notes Website</h1>
+    <p>Class 10 CBSE Notes, MCQs & Important Questions</p>
+</header>
+
+<div class="container">
+
+    <div class="subjects">
+
+        <div class="card">
+            <h2>🔬 Science</h2>
+            <p>Chapter Notes, MCQs & Diagrams</p>
+            <a href="#" class="btn">Open Notes</a>
+        </div>
+
+        <div class="card">
+            <h2>➗ Maths</h2>
+            <p>Formulas, Examples & Solutions</p>
+            <a href="#" class="btn">Open Notes</a>
+        </div>
+
+        <div class="card">
+            <h2>🌍 Social Science</h2>
+            <p>History, Geography & Civics</p>
+            <a href="#" class="btn">Open Notes</a>
+        </div>
+
+        <div class="card">
+            <h2>💻 Information Technology</h2>
+            <p>Practical File & Notes</p>
+            <a href="#" class="btn">Open Notes</a>
+        </div>
+
+        <div class="card">
+            <h2>📖 English</h2>
+            <p>Grammar, Literature & Writing</p>
+            <a href="#" class="btn">Open Notes</a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Shivam Notes Website | Made by Shivam
+</footer>
+
 </body>
 </html>
